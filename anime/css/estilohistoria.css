@@ -1,0 +1,416 @@
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+img{
+	width: 100%; /*permite que mi imagen sea vea al 100% dependiendo de la annchura que le de y altura que le de */
+	height: 100%;
+	display:flex;
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*estilo del texto*/
+
+.letras{
+	color: white;
+	overflow: scroll;
+	background: black;
+	border:solid;
+	font-size: 20px;
+	width :60%;
+	height:500px;
+	margin-left: auto; /* con estos margin consigo centrar mi contenedor al centro*/
+    margin-right: auto;
+    margin-top:100px;
+}
+.letratexto{
+ text-align: center;
+ font-size: 50px;
+ color: red;
+}
+.arriba{
+ width: 50%;
+ height:300px;
+ float: left;
+}
+.centro{
+ width: 100%;
+ height:300px;
+}
+.abajo{
+ width: 50%;
+ height:300px;
+ float: right;
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+.columna1{
+  
+  width: 30%;
+  padding: 15px;
+  color: white;
+  background-image: url("../img/text.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 20px; 
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+ 
+}
+.columna2{
+  float: left;
+  width: 30%;
+  padding: 15px;
+  color: white;
+  border: solid;
+  background-image: url("../img/text3.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 20px; 
+  margin-left: 200px;
+}
+.columna3{
+  float: right;
+  width: 30%;
+  padding: 15px;
+  color: white;
+  background-image: url("../img/text3.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 20px; 
+  margin-right: 200px;
+  border: solid;
+}
+
+.columna4{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  color: white;
+  background-image: url("../img/text5.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+.columna5{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  color: white;
+  background-image: url("../img/text1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+.columna6{
+  float: right;
+  width: 33.33%;
+  padding: 15px;
+  color: white;
+  background-image: url("../img/text6.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 20px; 
+}
+.cajatextos{
+	padding-top: 25px;
+	width: 100%;
+	/*border: solid;
+	border-color: red;*/
+	height: 700px;
+}
+.botontexto{
+  width: 100%;
+  height: 54px;
+  /*color: red;
+  border: solid;*/
+  clear: both;
+}
+.pulsar{
+	margin: 0;
+}
+.estiloinput{
+  
+  width: 33.07%;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  border: solid;
+  border-color: white;
+  cursor: crosshair;
+  background-color: black;
+}
+h2{
+  color: red;
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+}
+input{
+	
+	/*clear: both;
+	border: solid;
+	border-color: green;
+	cursor: crosshair;*/
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+
+
+.titulo1{
+  font-size: 50px;
+  text-align: center;
+  color:white;
+  height: 150px;
+  }
+.titulo2{
+  font-size: 60px;
+  text-align: center;
+  color:red;
+  }
+.titulo3{
+  font-size: 60px;
+  text-align: center;
+  padding-top: 70px;
+  color:red;
+  }
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*estilo de mi galeria de fotos que se desplazan automaticamente*/
+
+.slider{
+	width: 50%;
+	overflow: hidden;
+    margin-left: auto; /* con estos margin consigo centrar mi contenedor al centro*/
+    margin-right: auto;
+}
+.sliderul{
+    list-style-type: none; /*me elimina los puntos de mi lista en el menu*/ 
+    overflow: hidden;
+	display: flex;
+	padding: 0;
+	width: 700%; 
+	height: 800px;
+	animation: cambio 20s infinite; /*consigo que mis fotos se desplazen cada tres segundos*/
+	color:white;
+    font-size: 60px;
+}
+.sliderli{
+ width: 100%;
+ background-color: black;
+ border:solid;
+ color: white;
+ text-align: center;
+ padding: 10px;     /*añado espacio entre mi texto y el cuadro de mi menu para hacerlo mas grande*/
+ border-radius: 12px;
+}
+
+.slider img{
+	height: 92%;
+}
+@keyframes cambio{  
+	0% {margin-left: 0;} 
+	10%{margin-left: 0; }
+     /*hago que mi imagen cambie cada 1 segundo a la siguiente foto el calculo sera 20*0.05 del 5% de margen que hay entre cada foto que me dara 1 segundo*/
+	15%{margin-left: -100%;}/*cada foto se deja ver 2 segundos 10% cada vez haciendo el calculo 20*0.1 del 10% esto me dara cada 2 segundos se vera mi imagen*/
+	25%{margin-left: -100%;}
+
+	30%{margin-left: -200%;}
+	40%{margin-left: -200%;}
+
+	45%{margin-left: -300%;}
+	55%{margin-left: -300%;}
+
+	60%{margin-left: -400%;}
+	70%{margin-left: -400%;}
+
+	75%{margin-left: -500%;}
+	85%{margin-left: -500%;}
+
+	90%{margin-left: -600%;}
+	100%{margin-left: -600%;}
+}
+
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*estilo de mi galeria de fotos 2º que se desplazan automaticamente*/
+
+.slider2{
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
+    margin-left: auto; /* con estos margin consigo centrar mi contenedor al centro*/
+    margin-right: auto;
+    height:92%;
+}
+.slider2ul{
+	list-style-type: none; /*me elimina los puntos de mi lista en el menu*/ 
+    overflow: hidden;
+	display: flex;
+	padding: 0;
+	width: 1000%; 
+	height: 800px;
+	animation: cambia 25s infinite alternate; /*consigo que mis fotos se desplazen cada 2 ssegundos*/
+	color:white;
+    font-size: 60px;
+}
+.slider2 img{
+	height:92%;	
+}
+@keyframes cambia{ 
+	0% {margin-left: 0;} 
+	9%{margin-left: 0;}
+     /*hago que mi imagen cambie cada 1 segundo a la siguiente foto el calculo sera 20*0.05 del 5% de margen que hay entre cada foto que me dara 1 segundo*/
+	10%{margin-left: -100%;}/*cada foto se deja ver 2 segundos 10% cada vez haciendo el calculo 20*0.1 del 10% esto me dara cada 2 segundos se vera mi imagen*/
+	19%{margin-left: -100%;}
+
+	20%{margin-left: -200%;}
+	29%{margin-left: -200%;}
+
+	30%{margin-left: -300%;}
+	39%{margin-left: -300%;}
+
+	40%{margin-left: -400%;}
+	49%{margin-left: -400%;}
+
+	50%{margin-left: -500%;}
+	59%{margin-left: -500%;}
+
+	60%{margin-left: -600%;}
+	69%{margin-left: -600%;}
+
+	70%{margin-left: -700%;}
+	79%{margin-left: -700%;}
+
+	80%{margin-left: -800%;}
+	89%{margin-left: -800%;}
+
+	90%{margin-left: -900%;}
+	100%{margin-left: -900%;}
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*estilo de mis botones que permiten pasar de foto con el raton*/
+
+.contenedor{
+	  width: 50%;
+	  position: relative;
+	  height: 700px;
+    margin-left: auto; /* con estos margin consigo centrar mi contenedor al centro*/
+    margin-right: auto;
+    border:solid;
+    color: white;
+    clear: both;
+}
+.botones{
+	font-size:30px;
+	width:70px;
+	height:70px;
+	line-height:70px;
+	border-radius:50%;
+	background-color: rgba(0,0,0,.7);
+	text-align:center;
+	font-weight:bold;
+	position:absolute;
+	color:#fff;
+	box-shadow: 0 0 10px rgba(255,255,255,.6);
+}
+.botones:hover{
+cursor: pointer;
+transform: scale(1.2,1.2);
+}
+.atras{ /* me permite mover la flecha de hacia atras de mi galeria de fotos*/
+	left: 2%;
+	top: calc(60% - 70px); /*con el % puedo mover la flecha de arriba a abajo*/
+}   /*con 70px puedo mover la flecha de izquierda a derecha */
+.adelante{/*me permite mover la flecha de hacia adelante */
+	right:2%;
+	top: calc(60% - 70px);
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*estilo de ancho maximo */
+@media(max-width: 1200px){
+   .contenedor,.estiloinput{
+    width: 100%;
+  } 
+}
+@media(max-width: 1900px){
+  .columna1{
+    width: 50%;
+    margin-left: auto; /* con estos margin consigo centrar mi contenedor al centro*/
+    margin-right: auto;
+  } 
+}
+@media(max-width: 1900px){
+  .columna2,.columna3{
+    width: 50%;
+    margin-left: 0; /* con estos margin consigo centrar mi contenedor al centro*/
+    margin-right: 0;
+  } 
+}
+@media(max-width: 1900px){
+   .cajatextos{
+    height:0%;
+    padding-top: 0;
+  } 
+}
+@media(max-width: 1200px){
+   .columna1{
+    width: 100%;
+    margin-left: 0; /* con estos margin consigo centrar mi contenedor al centro*/
+    margin-right: 0;
+  } 
+}
+@media(max-width: 1200px){
+   .columna2,.columna3{
+    width: 100%;
+    margin:0;
+  } 
+}
+@media(max-width: 1200px){
+   .columna4,.columna5,.columna6{
+    width: 100%;
+  } 
+}
+@media(max-width: 1200px){
+   .cajatextos{
+    height: 0%;
+  } 
+}
+@media(max-width: 1200px){
+   .botontexto{
+    width: 100%;
+    height: 155px;
+    
+  } 
+}
+@media(max-width: 1200px){
+  .letras{
+    width: 100%;
+    height:500px;
+  }
+}
+@media(max-width: 1200px){
+  .vertical3{
+    width: 50%;
+    opacity:0.7;
+  }
+}
+@media(max-width: 1200px){
+  .slider,.slider2{
+    width: 100%;
+  }
+}

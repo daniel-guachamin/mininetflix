@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estiloforo.css">
+	 <link rel="stylesheet" type="text/css" href="css/estilorepetido.css">
+	<meta charset="UTF-8">
+	<title>Formulario de contactos</title>
+</head>
+<body>
+    
+	<div class="logo"> <!--llamo a mi clase logo para darle estilo -->
+		<a href="portada.html" title="Volver a la página principal"><img class="logoimg" src="img/icono.jpg" alt="Imagen de mi logo"></a>  <!--introdusco mi imagen logo,y creo una ruta de vuelta a mi portada-->
+	</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+	<button type="button" title="Cambiar idioma a Español" id="puntero" onclick="español()"><img class="idioma" src="img/españa.jpg" alt="imagen de España" ></button>
+    <button type="button" title="Cambiar idioma a Inglés" id="puntero2" onclick="ingles()"><img class="idioma" src="img/inglaterra.jpg" alt="imagen de inglaterra"></button>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+	<!--llamo a mi clase header para darle estilo -->
+	<div class="headerforo">
+		<ul class="header2" ><!--menu_principal-->
+			<li class="header3 fotoinicio" title="Página principal"><a href="portada.html" id="id1" 
+				>Portada</a></li>
+		    <li class="header3" title="Conoce la historia y los personajes del anime"><a href="historia.html" id="id2"
+				>Historia y Personajes</a></li>
+
+			<li class="header3" title="Videos del anime"><a href="videos.html" id="id3"
+				>Videos</a></li><!--usar title para sacar un pequeño comentario donde situes el raton-->
+		</ul><!--menu_principal-fin-->
+		 </div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+  <form  class="formulario">
+  	<h2 class="form_titulo" id="id4">REGISTRATE</h2>
+  	<input type="text" class="form_input">
+    <label 
+    class="form_label" id="id5">Escribe tu nombre</label>
+    <input type="text" class="form_input">
+    <label 
+    class="form_label" id="id6">Escribe tus apellidos</label>
+    <input type="text" class="form_input">
+    <label 
+    class="form_label" id="id7">Teléfono</label>
+    <input type="text" class="form_input">
+    <label 
+    class="form_label" id="id8">Dirección</label>
+    <!-- submit evia los datos -->
+    <label  class="mensaje" id="id9">Escribe aquí tu comentario</label>
+    <textarea name="mensaje"></textarea>
+    <label  class="mensaje" id="id10">Elige un pais</label>
+    <select  name="country" >
+      <option class="tamaño" value="australia" id="id11">ESPAÑA</option>
+      <option value="canada" id="id12">ECUADOR</option>
+      <option value="usa" id="id13">USA</option>
+      <option value="usa" id="id14">COLOMBIA</option>
+      <option value="usa" id="id15">ALEMANIA</option>
+      <option value="usa" id="id16">PERU</option>
+    </select>
+    <input type="submit" class="form_submit" value="Enviar">
+    </form>
+
+	
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+	<footer class="muevete">
+		<h1 id="id17">Página 4</h1>
+	</footer>
+	<script src="js1/idiomaforo.js"></script>
+	<script src="js1/form.js"></script>
+</body>
+</html>

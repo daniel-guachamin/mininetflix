@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilohistoria.css">
+	<link rel="stylesheet" type="text/css" href="css/estilorepetido.css">
+	<title>Historia y personajes</title>
+	<meta charset="UTF-8">
+	<meta name="viewoprt" content="width=device_width, user-scalable=no, initial_scale=1, maximum-scale=1, minimum-scale=1">
+	 
+	 	 
+</head>
+<body>
+	<div class="logo"> <!--llamo a mi clase logo para darle estilo -->
+		<a href="portada.html" id="1" title="Volver a la página principal"><img class="logoimg" src="img/icono.jpg" alt="imagen de mi logo"></a>  <!--introdusco mi imagen logo,y creo una ruta de vuelta a mi portada-->
+	</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- botones que permiten el cambio de idioma de mi pagina wed -->
+	<button type="button" title="Cambiar idioma a Español" id="puntero" onclick="español()"><img class="idioma" src="img/españa.jpg" alt="imagen de España" ></button>
+    <button type="button" title="Cambiar idioma a Inglés" id="puntero2" onclick="ingles()"><img class="idioma" src="img/inglaterra.jpg" alt="imagen de inglaterra"></button>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+	<!--llamo a mi clase header para darle estilo -->
+	<div class="header">
+		<ul class="header2"><!--menu_principal-->
+			<li class="header3 fotoinicio" title="Página principal"><a href="portada.html" id="id1" 
+				>Portada</a></li>
+		    
+			<li class="header3" title="Videos del anime"><a href="videos.html"  
+				 id="id2">Videos</a></li><!--usar title para sacar un pequeño comentario donde situes el raton-->
+			<li class="header3" title="Registrate"><a href="foro.html"   id="id3">Foro</a></li>
+		
+		</ul><!--menu_principal-fin-->
+		</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<header>
+  <input class="pulsar" type="checkbox" id="btn_menu">
+  <label for="btn_menu"><img class="imgmenu" src="img/menu.jpg" title="Menu de acceso"></label>
+  <br><br><br>
+	<div class="vertical">
+		<ul class="vertical2"><!--menu_vertical-->
+		    <li class="vertical3" title="Pulsa para ir al principio"><a href="#1" 
+				>1</a></li>
+
+			<li class="vertical3" title="Conoce a los personajes del anime"><a href="#2"
+				>2</a></li><!--usar title para sacar un pequeño comentario donde situes el raton-->
+			<li class="vertical3" title="Acceder a la galeria de fotos"><a href="#3" >3</a></li>
+		
+		</ul><!--menu_vertical-fin-->
+	</div>
+	 </header>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<script >
+		function mostrar(){
+		document.getElementById("caja").style.display = "block";
+	}
+	function ocultar(){
+		document.getElementById("caja").style.display = "none";
+	}
+	function mostrar_ocultar(){
+		var caja= document.getElementById("caja");
+		if(caja.style.display == "none") {
+			mostrar();
+			document.getElementById("boton").value = "Ocultar texto 4";
+		}
+		else{
+			ocultar();
+			document.getElementById("boton").value = "Mirar texto 4";
+		}
+	}
+	// ---------------------------------------------------------------
+	function mostrar1(){
+		document.getElementById("caja1").style.display = "block";
+	}
+	function ocultar1(){
+		document.getElementById("caja1").style.display = "none";
+	}
+	function mostrar1_ocultar1(){
+		var caja1= document.getElementById("caja1");
+		if(caja1.style.display == "none") {
+			mostrar1();
+			document.getElementById("boton1").value = "Ocultar texto 5";
+		}
+		else{
+			ocultar1();
+			document.getElementById("boton1").value = "Mirar texto 5";
+		}
+	}
+	// ---------------------------------------------------------------
+	function mostrar2(){
+		document.getElementById("caja2").style.display = "block";
+	}
+	function ocultar2(){
+		document.getElementById("caja2").style.display = "none";
+	}
+	function mostrar2_ocultar2(){
+		var caja2= document.getElementById("caja2");
+		if(caja2.style.display == "none") {
+			mostrar2();
+			document.getElementById("boton2").value = "Ocultar texto 6";
+		}
+		else{
+			ocultar2();
+			document.getElementById("boton2").value = "Mirar texto 6";
+		}
+	}
+	// ---------------------------------------------------------------
+	// utilizo mi funcion ocularh para borrar mi contenido
+	function borrar(){
+		document.getElementById("borrar").style.display = "none";
+	}
+	function borrar2(){
+		document.getElementById("borrar2").style.display = "none";
+		document.getElementById("borrar3").style.display = "none";
+	}
+	function eliminar(){
+		document.getElementById("eliminargaleria1").style.display = "none";
+		document.getElementById("eliminargaleria2").style.display = "none";
+	}
+
+	
+</script>
+<div class="titulo3">
+		<p id="id3a">Descripción de personajes</p>
+	</div>
+<div class="cajatextos">
+<div class="columna1">
+    <h2>1ºMeliodas</h2>
+    <p id="id4">Meliodas (Rey Demonio) menciona que romperá la maldición de Elizabeth solo para poder matarla de una manera muy dolorosa. Este ataca a Elizabeth, quien es salvada por Gowther apartándola del camino. Luego coloca un Cubo Perfecto alrededor de Hawk y otro separado alrededor de Elizabeth y Escanor.Meliodas (Rey Demonio) le dice a Zeldris que es una pena que aún ame a esa mujer vampiro, que está decepcionado de él al igual que Meliodas. Elizabeth le pide que deje el cuerpo de Meliodas y que, como padre, debería apoyar a sus hijos. El Rey Demonio dijo algo como: "También es deber de un padre castigar a sus hijos".Mael y los pecados atacan a Meliodas (Rey Demonio), desviando algunos ataques de sus "tentáculos" y bombardeándolo. Esto no logra absolutamente nada, Meliodas los golpea con un ataque de improviso. King dice que no sirve de nada atacarlo porque su poder es demasiado grande y sigue aumentando (o algo así).Meliodas (Rey Demonio) iba a matar a Elizabeth, luego Hawk comenzó a provocarlo (como lo hizo en el primer arco con Hendrickson). Se fija en Hawk en el Cubo Perfecto y usa sus "tentáculos" para aplastarlo, finalemente cuando está a punto de matarlo Ban  y aleja a Hawk de Meliodas, se coloca detrás de él y le dice: "Capitán, ¿me oyes?". Todos se alegran de verlo y agrega.</p>
+    
+  </div>
+  </div>
+<div class="cajatextos">
+<div class="columna2">
+    <h2>2ºElizabeth</h2>
+    <p id="id5">Elizabeth confundida ante la mención de que ella era una diosa, Zeldris menciono que cada vez que ella moría, reencarnaba, perdía su recuerdos de sus vidas pasadas e inevitablemente conocía a Meliodas.Ella cambio su estado de animo, su expresión cambio a una de felicidad, puesto que ella quería que fuese real él hecho de que siempre a estado al lado de Meliodas. Aun así ella quería saber aun mas, quería recordar cada momento que había pasado con su amado, Zeldris furioso grito "Entonces recuerda todo y conoce él pecado que cometiste", tras esa frase que salia de la boca de este, ella pudo liberar a Merlín de aquella magia.En cuanto después de la charla con él hermano menor de Meliodas, Elizabeth se encontraba con sus amigas Diane e Elaine.Tras un pequeño dolor de cabeza Diane dijo que tratara de recordar todo y que estaría con ella todo él tiempo.Mientras tanto Meliodas se encontraba charlando con Ban,De pronto Elizabeth llego agitada y gritando un hecho que solo Meliodas conocía, Diane trataba de detenerla pero esta se resistía. Merlín la observo, Elizabeth menciono que no la había visto después de mucho tiempo y esta lucía aun mas joven y pregunto si venían a visitar a Meliodas.Cuando Elizabeth alzo la mirada pudieron ver que ambos ojos si venían a visitaral suelo  inconsciente.......</p>
+    
+  </div>
+  <div class="columna3">
+    <h2>3ºEscánor</h2>
+    <p id="id6">Escánor nació como el príncipe del Reino de Castellio . Cuando era niño, su hermano mayor Daymond siempre estaba abusando de él, hasta que un día, su poder despertó y accidentalmente rompió el brazo de su hermano. Sus padres lo repudiaron empezando a llamar monstruo y todas las fuerzas del reino trataron de matarlo. Fue rescatado por una mujer amable llamada Rosa , quien lo escondió en un barril y lo puso a la deriva en el mar. Escanor sobrevivió, pero a donde quiera que iba, la gente lo llamaba monstruo aún cuando les ayudaba. Finalmente, conoció a Merlín y Meliodas , quienes fueron los primeros que no le temieron y le pidieron unirse a su orden de caballeros.Hace 12 años.Luego, los mensajeros del Reino de Edimburgo resultaron ser Vampiros y fueron derrotados por el Gran Caballero Sagrado Zaratras , se dio cuenta de que el reino estaba siendo controlado por un Rey Vampiro, por lo que controlaron a todos los integrantes de los Siete Pecados Capitales para que iban a terminar con dicho rey. Antes de partir de la misión, Escanor se disculpaba con Meliodas por tener que cargar su pesado Tesoro Sagrado Rhitta , diciendo además y le gustaría volver cuando sea de día, sin embargo, Meliodas le aclara que Merlinles haría un portal.  Escanor haría un portalle declara a su capitán que se esforzaría....</p>
+    
+  </div>
+  </div>
+  <div class="botontexto">
+   <input class="estiloinput" type="submit" id="boton" value="Ocultar texto 4" onclick="mostrar_ocultar()">
+   <input class="estiloinput" type="submit" id="boton1" value="Ocultar texto 5" onclick="mostrar1_ocultar1()">
+   <input class="estiloinput" type="submit" id="boton2" value="Ocultar texto 6" onclick="mostrar2_ocultar2()">
+   </div>
+   <br>
+<!-- <div class="cajatextos"> -->
+  <div class="columna4" id="caja">
+    <h2>4ºBan</h2>
+    <p id="id6a">Ban (Rey Demonio) menciona que romperá la maldición de Elizabeth solo para poder matarla de una manera muy dolorosa. Este ataca a Elizabeth, quien es salvada por Gowther apartándola del camino. Luego coloca un Cubo Perfecto alrededor de Hawk y otro separado alrededor de Elizabeth y Escanor.Meliodas (Rey Demonio) le dice a Zeldris que es una pena que aún ame a esa mujer vampiro, que está decepcionado de él al igual que Meliodas. Elizabeth le pide que deje el cuerpo de Meliodas y que, como padre, debería apoyar a sus hijos. El Rey Demonio dijo algo como: "También es deber de un padre castigar a sus hijos".Mael y los pecados atacan a Meliodas (Rey Demonio), desviando algunos ataques de sus "tentáculos" y bombardeándolo. Esto no logra absolutamente nada, Meliodas los golpea con un ataque de improviso. King dice que no sirve de nada atacarlo porque su poder es demasiado grande y sigue aumentando (o algo así).Meliodas (Rey Demonio) iba a matar a Elizabeth, luego Hawk comenzó a provocarlo (como lo hizo en el primer arco con Hendrickson). Se fija en Hawk en el Cubo Perfecto y usa sus "tentáculos" para aplastarlo, finalemente cuando está a punto de matarlo Ban  y aleja a Hawk de Meliodas, se coloca detrás de él y le dice: "Capitán, ¿me oyes?". Todos se alegran de verlo y agrega.</p>
+    
+  </div>
+
+  
+  <div class="columna5" id="caja1">
+    <h2>5ºKing</h2>
+    <p id="id6b">King confundida ante la mención de que ella era una diosa, Zeldris menciono que cada vez que ella moría, reencarnaba, perdía su recuerdos de sus vidas pasadas e inevitablemente conocía a Meliodas.Ella cambio su estado de animo, su expresión cambio a una de felicidad, puesto que ella quería que fuese real él hecho de que siempre a estado al lado de Meliodas. Aun así ella quería saber aun mas, quería recordar cada momento que había pasado con su amado, Zeldris furioso grito "Entonces recuerda todo y conoce él pecado que cometiste", tras esa frase que salia de la boca de este, ella pudo liberar a Merlín de aquella magia.En cuanto después de la charla con él hermano menor de Meliodas, Elizabeth se encontraba con sus amigas Diane e Elaine.Tras un pequeño dolor de cabeza Diane dijo que tratara de recordar todo y que estaría con ella todo él tiempo.Mientras tanto Meliodas se encontraba charlando con Ban,De pronto Elizabeth llego agitada y gritando un hecho que solo Meliodas conocía, Diane trataba de detenerla pero esta se resistía. Merlín la observo, Elizabeth menciono que no la había visto después de mucho tiempo y esta lucía aun mas joven y pregunto si venían a visitar a Meliodas.Cuando Elizabeth alzo la mirada pudieron ver que ambos ojos si venían a visitaral suelo  inconsciente.......</p>
+    
+  </div>
+  
+  <div class="columna6" id="caja2">
+    <h2>6ºDiane</h2>
+    <p id="id6c">Diane nació como el príncipe del Reino de Castellio . Cuando era niño, su hermano mayor Daymond siempre estaba abusando de él, hasta que un día, su poder despertó y accidentalmente rompió el brazo de su hermano. Sus padres lo repudiaron empezando a llamar monstruo y todas las fuerzas del reino trataron de matarlo. Fue rescatado por una mujer amable llamada Rosa , quien lo escondió en un barril y lo puso a la deriva en el mar. Escanor sobrevivió, pero a donde quiera que iba, la gente lo llamaba monstruo aún cuando les ayudaba. Finalmente, conoció a Merlín y Meliodas , quienes fueron los primeros que no le temieron y le pidieron unirse a su orden de caballeros.Hace 12 años.Luego, los mensajeros del Reino de Edimburgo resultaron ser Vampiros y fueron derrotados por el Gran Caballero Sagrado Zaratras , se dio cuenta de que el reino estaba siendo controlado por un Rey Vampiro, por lo que controlaron a todos los integrantes de los Siete Pecados Capitales para que iban a terminar con dicho rey. Antes de partir de la misión, Escanor se disculpaba con Meliodas por tener que cargar su pesado Tesoro Sagrado Rhitta , diciendo además y le gustaría volver cuando sea de día, sin embargo, Meliodas le aclara que Merlinles haría un portal.  Escanor haría un portalle declara a su capitán que se esforzaría....</p>
+    
+  </div>
+  <!-- </div>  -->
+
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- contenido de la historia -->
+	   <div class="letras" id="borrar">
+	   	<input class="estiloinput" type="submit" value="Eliminar historia" onclick="borrar()">
+   	<h1 class="letratexto" id="id7">HISTORIA</h1>
+   	 <img class="arriba" src="img/peque.jpg" alt="Foto izquierda del anime"><p id="id8">El grupo fue originalmente una orden de caballeros que servían en el reino de Britannia y estaba liderado por Meliodas. Sin el conocimiento de la mayoría de sus miembros, se formaron los Siete Pecados Capitales con el propósito expreso de derrotar a los Diez Mandamientos. Hace 16 años, el rey de Liones tuvo una premonición a través de su habilidad Vision, en la que ellos se convertirían en los protectores del reino. Al escuchar esto, tanto Meliodas y Merlin se encargaron de encontrar los otros cinco miembros, con el fin de detener a los Diez Mandamientos, si llegaban a ser revividos.Los Siete Pecados Capitales sirvieron a Britannia durante seis años, ganándose una gran reputación durante este tiempo como los caballeros mas fuertes de Liones. Sin embargo, debido a que fueron inculpados por asesinar a Zaratras, el Gran Caballero Sagrado, se los tachó de bandidos y traidores. Meliodas ordenó al grupo a dispersarse para evitar ser capturados, y todo el mundo fue capaz de escapar por separado. Se sospecha que uno de los miembros podría ser un traidor que ayudó a trazar las artimañas y que dejo inconsciente a Meliodas poco después de dar la orden de escapar. Mas tarde se reveló ser Merlin, aunque al parecer esta tenia un motivo para hacerlo que aun no se ha revelado.Los Siete Pecados Capitales reaparecieron diez años más tarde en el reino, después de haberse reunificado seis de sus miembros. Ellos ayudaron a la tercera princesa de Liones, Elizabeth, a liberar el reino del gobierno opresivo de los Caballeros Sagrados y detener el plan de Hendrickson para liberar el sello del Clan de los Demonios.Tras la derrota de Hendrickson, los Siete Pecados Capitales fueron alabados como héroes por salvar el reino y fueron absueltos de sus crímenes falsos, dándoles la bienvenida al reino de Liones una vez más.
+Después de esto, dos miembros del grupo se separaron del resto, mientras los otros cuatro se vieron envueltos en la batalla contra los Diez Mandamientos. Tras unirse todos una vez más, incluyendo al ultimo miembro faltante, decidieron tomar partido para detener a los Diez Mandamientos.
+Meliodas: Meliodas considera que su pecado es su falta de protección hacia Danafor, sus ciudadanos, y Liz de la aniquilación del reino. Aunque la historia oficial es que Meliodas se perdió a sí mismo en su ira y aniquiló el reino por sí mismo. El pecado de Meliodas es el del Dragón, puesto que es conocido en varias mitologías del mundo, que el dragón es un ser temible y poderoso, sin embargo, cuando dicha bestia se enfurece, se vuelve mucho más peligrosa. Esto esta relacionado con el poder de Meliodas, el cuál aumenta considerablemente cuando se enfurece.</p>
+<div class="centro"><img src="img/peque2.jpg" alt="Foto central del anime"></div>
+<p id="id9">Diane: Después de ser contratada junto con Matrona por Caballeros Sagrados de Liones bajo el engaño de subyugar a una tribu de salvajes, fueron traicionadas por el Caballero Sagrado Gannon, que tenía planes de asesinarlas, Matrona fue envenenada y asesinó a todos los caballeros del lugar, para luego morir. Los supervivientes del lugar arrestaron a Diane, y fue condenada a muerte por decapitación, siendo conocida como el pecado de la envidia, debido a sus aparentes celos hacia Matrona, que por eso la había asesinado y para encubrirse acabó asesinando también a los Caballeros Sagrados del lugar. Su pecado es el de la Serpiente, la cual es bien conocida por ser un animal envidioso y venenoso, lo cual hace referencia al pecado de Diane, la envidia. Este se adjudica bastante a la personalidad de Diane, la cual se enfurece increíblemente al pensar que Elizabeth y Meliodas tuviesen alguna relación romántica.
+Ban: Como el único sobreviviente del Bosque del Rey Hada, él asumió la responsabilidad de esto, y fue condenado por "destruir el bosque y matar a la Guardiana Sagrada". Como resultado de ello, fue condenado a muerte, y fue conocido como el pecado de la codicia, debido a su aparente codicia por la inmortalidad. Su pecado es el del Zorro, puesto que según la mitología japonesa el zorro es un animal taimado que suele engañar a la gente. El zorro en la mitología japonesa gana poder y sabiduría con respecto a su edad, lo cual hace alusión a la inmortalidad de Ban. Además, en la vida real, el zorro es un animal conocido por robar los huevos de los pájaros para comérselos, lo cual esta relacionado con la afición de Ban con robar.
+King: Después de supuestamente acabar con la vida de Helbram, King tomó la condena por ignorar el asesinato en masa de Helbram a seres humanos continuamente durante el período de quinientos años, que está cerca de lo que desató una guerra entre humanos y hadas. Fue condenado en consecuencia, a una pena de prisión de un millar de años, y fue reconocido como el pecado de la pereza mientras ignoraba las atrocidades cometidas y se hizo de la vista gorda. Su pecado es el del Oso Grizzly, puesto que es un animal perezoso que pasa varios meses durmiendo, pero cuando despierta es poderoso y feroz, haciendo alusión a la pereza de King pero su inmenso poder al proteger lo que ama.
+Gowther: A Gowther le fue concedido el pecado de lujuria después de haber sido acusado de forzar a la princesa Nadja, la hermana menor de Baltra Liones, a actos sexuales viles que terminaron con su muerte. En realidad, Nadja y Gowther estaban enamorados y muy felices entre sí. Entonces se reveló que Nadja estaba cerca de la muerte y deseaba pasar sus últimos momentos con Gowther. Después de un momento de pasión, ella murió pacíficamente dentro del abrazo de Gowther y, en un momento de pánico, Gowther trató de reanimarla desechando su corazón mágico y reemplazando el de Nadja con él, en vano. Cuando los guardias lo encontraron en el dormitorio lleno de sangre con el cuerpo muerto de Nadja debajo de él, se creyó que él la había asesinado. Su pecado es el de la Cabra, en la mitología griega, los sátiros (hombres mitad cabra y mitad humanos) eran relacionados con el apetito sexual, y los pintores solían representarlos con erecciones perpetuas, lo cual se relaciona con el pecado de Gowther, el de la lujuria. 
+Merlin: Su pecado es el del Jabalí, el cual es conocido como un animal que suele comer mucho, el cual se apega a su pecado, el de la gula. Lo cual se asemeja mucho a ella por su gula de sabiduría, cosa que la a llevado a doblar las leyes del mundo deteniendo su propio tiempo para nunca morir y seguir obteniendo más conicimiento.</p><div class="abajo"><img src="img/album3.jpg" alt="Foto derecha del anime"></div>
+<p id="id10">Escanor: Su pecado es el del León, el cual es conocido como un animal que se cree el rey, es un animal poderoso, sin embargo, suele ser perezoso y creerse más que los demás, lo cual se apega a el pecado de la soberbia que representa Escanor. Además se apega muy bien a la personalidad del día de Escanor, pues en ese momento, es un ser arrogante y presumido de su inmenso poder.
+</p></div> 
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+	<div class="titulo3" id="2">
+		<p id="id11">Principales personajes</p>
+	</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+	<div class="titulo1"  id="borrar2">
+		<p id="id12">Los 7 pecados capitales</p>
+	</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+    <div class="slider" id="borrar3"> <!--empieza mi deslizador de fotos-->
+    	<input class="estiloinput" type="submit" value="Eliminar galería 1" onclick="borrar2()">
+    	<ul class="sliderul">
+    		<li class="sliderli"><p>MELIODAS</p><img src="img/meliodas.jpg" alt=""></li>
+    		<li class="sliderli"><p>ESCANOR</p><img src="img/escanor.jpg" alt=""></li>
+    		<li class="sliderli"><p>BAN</p><img src="img/ban.jpg" alt=""></li>
+    		<li class="sliderli"><p>DIANE</p><img src="img/diane.jpg" alt=""></li>
+    		<li class="sliderli"><p>KING</p><img src="img/king.jpg" alt=""></li>
+    		<li class="sliderli"><p>MERLIN</p><img src="img/merlin.jpg" alt=""></li>
+    		<li class="sliderli"><p>GOWTER</p><img src="img/gowther.jpg" alt=""></li>
+
+    	</ul>
+    	
+    </div>
+
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+    <div class="titulo1" id="eliminargaleria1">
+		<p id="id13">Los 10 mandamientos</p>
+	</div>
+
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+    <div class="slider2" id="eliminargaleria2"> <!--empieza mi 2º deslizador de fotos-->
+    	<input class="estiloinput" type="submit" value="Eliminar galería 2" onclick="eliminar()">
+    	<ul class="slider2ul">
+    		<li class="sliderli"><p>DERRIERE</p><img src="img/derriere.jpg" alt=""></li>
+    		<li class="sliderli"><p>ESTARROSA</p><img src="img/estarrosa.jpg" alt=""></li>
+    		<li class="sliderli"><p>GALAND</p><img src="img/galand.jpg" alt=""></li>
+    		<li class="sliderli"><p>MELASCULA</p><img src="img/melascula.jpg" alt=""></li>
+    		<li class="sliderli"><p>GLOXINIA</p><img src="img/gloxinia.jpg" alt=""></li>
+    		<li class="sliderli"><p>DROLE</p><img src="img/drole.jpg" alt=""></li>
+    		<li class="sliderli"><p>ZELDRIS</p><img src="img/zeldris.jpg" alt=""></li>
+    		<li class="sliderli"><p>FRAUDRIN</p><img src="img/fraudrin.jpg" alt=""></li>
+    		<li class="sliderli"><p>MONSPEET</p><img src="img/monspeet.jpg" alt=""></li>
+    		<li class="sliderli"><p>GRAYROAD</p><img src="img/grayroad.jpg" alt=""></li>
+
+    	</ul>
+    	
+    </div>
+    
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<div class="titulo2" id="3">
+		<p id="id14">Galería de fotos</p>
+	</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+    <div class="contenedor"> 
+        	<div class="atras botones" title="Has click">
+        	&#60; </div> <!--codigo exadecimal-->
+        	<div class="adelante botones" title="Has click">
+        	&#62; </div>
+    	       <img src="img/album9.jpg" alt="" id="imagen">
+    	
+    </div>
+
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<script  src="js1/idiomahistoria.js"></script>
+<script  src="js1/js.js"></script>
+
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<footer class="muevete">
+		<h1 id="id15">Página 2</h1>
+</footer>
+
+</body>
+</html>

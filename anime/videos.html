@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilovideos.css">
+  <link rel="stylesheet" type="text/css" href="css/estilorepetido.css">
+	<title>web_anime</title>
+	<meta charset="UTF-8">
+	
+</head>
+<body>
+
+	<div class="logo"> <!--llamo a mi clase logo para darle estilo -->
+		<a href="portada.html" id="1" title="Volver a la página principal"><img class="logoimg" src="img/icono.jpg" alt="imagen de mi logo"></a>  <!--introdusco mi imagen logo,y creo una ruta de vuelta a mi portada-->
+	</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+    <button type="button" title="Cambiar idioma a Español" id="puntero" onclick="español()"><img class="idioma" src="img/españa.jpg" alt="imagen de España" ></button>
+    <button type="button" title="Cambiar idioma a Inglés" id="puntero2" onclick="ingles()"><img class="idioma" src="img/inglaterra.jpg" alt="imagen de inglaterra"></button>
+
+
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+	<!--llamo a mi clase header para darle estilo -->
+
+  <div class="header">
+		<ul class="header2"><!--menu_principal-->
+      <li class="header3 fotoinicio" title="Página principal"><a href="portada.html" id="id1"
+        >Portada</a></li>
+		    
+			<li class="header3" title="Conoce la historia y los personajes del anime"><a href="historia.html" id="id2"
+				>Historia y personajes</a></li><!--usar title para sacar un pequeño comentario donde situes el raton-->
+			<li class="header3" title="Registrate"><a href="foro.html" id="id3" >Foro</a></li>
+		
+		</ul><!--menu_principal-fin-->
+    </div>
+    
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- con btn_menu de mi etiqueta input puedo interactuar con mi menu vertical -->
+<header>
+  <input type="checkbox" id="btn_menu">
+  <label for="btn_menu"><img class="imgmenu label" src="img/menu.jpg" title="Menu de acceso"></label>
+  <br><br><br>
+	<div class="vertical">
+		<ul class="vertical2"><!--menu_vertical-->
+		    <li class="vertical3" title="Pulsa para ir al principio"><a href="#1"  
+				>1</a></li>
+
+			<li class="vertical3" title="Accede a los videos más vistos"><a href="#2"
+				>2</a></li><!--usar title para sacar un pequeño comentario donde situes el raton-->
+			<li class="vertical3" title="Accede a la lista de comentarios"><a href="#3" >3</a></li>
+		
+		</ul><!--menu_vertical-fin-->
+	</div>
+  </header>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- salto de linea -->
+
+	<div class="titulo2">
+		<p id="id4">Trailer</p>
+	</div>	
+
+<div class="trailer" title="Has click para reproducir el video">
+<video controls poster="img/trailer.jpg">
+	<source src="video/trailer.mp4" type="video/mp4">
+		<source src="video/trailer.ogv" type="video/ogv">
+			<source src="video/trailer.webm" type="video/webm">
+	
+</video>  
+</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<br><br><!-- salto de linea -->
+
+	<div class="titulo2">
+    <!-- name me permite acceder mas rapido a un contenido especifico con el menu vertical mas -->
+		<p id="id5">Temporada 1</p>
+	</div>
+
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<div class="scroll"> 
+<table >
+
+  <tr  id="2">
+    <th id="id6">CAPITULOS</th>
+    <th id="id7">DESCRIPCIÓN</th>
+    <th id="id8">VER CAPITULO</th>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+  <tr>
+    <td class="cambio" id="id9">1.Los siete pecados capitales</td>
+    <td id="id10">Tras conocer un antiguo caballero, una princesa inicia una aventura increible con la esperanza de derrocar a los tiranos que se han apoderado de su reino.</td>
+    <td><a href="capitulo.html#1"><img src="img/cap1.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id11">2.La espada del caballero</td>
+    <td id="id12">Gilthunder coloca una espada en el centro de la aldea que impide la produccion de cerveza.¿Conseguira Meliodas retirarla y convbertirse en el heroe que salve el pueblo?</td>
+    <td><a href="capitulo.html#2"><img src="img/cap2.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+ <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id13">3.El pecado del bosque dormido</td>
+    <td id="id14">Meliodas,Hawk y Elizabeth viajan hasta un bosque aterrador donde Meliodas se jugara el todo por el todo para obtener información. </td>
+    <td><a href="capitulo.html#3"><img src="img/cap3.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+ <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id15">4.El sueño de una niña</td>
+    <td id="id15a">Diane se une a la misión para salvar a Ban. Esta se verá pronto interrunpida ante el ataque de un enemigo decidido a terminar con la aldea y con los caballeros.</td>
+    <td><a href="capitulo.html#4"><img src="img/cap4.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id16">5.Aunque murieras</td>
+    <td id="id17">Golgius intenta apoderarse de la espada de Elizabeth y Meliodas;el sonido de una misteriosa campana siembra la discordia en el grupo.</td>
+    <td><a href="capitulo.html#5"><img src="img/cap5.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+     <tr>
+    <td class="cambio" id="id18">6.El poema de los inicios</td>
+    <td id="id19">Elizabeth y Meliodas deben enfrentarse a los Caballeros Sagrados,Friesia y Ruin para acceder a la mazmorra.Un mal augurio presagia un desastre inminente.</td>
+    <td><a href="capitulo.html#6"><img src="img/cap6.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+     <tr>
+    <td class="cambio" id="id20">7.Una reunion conmovedora</td>
+    <td id="id21">Ban,Meliodas y compañia vuelven a estar juntos al fin y ponen rumbo a la Necrópolis en busca del paradero del pecado de la pereza del oso.</td>
+    <td><a href="capitulo.html#7"><img src="img/cap7.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+     <tr>
+    <td class="cambio" id="id22">8.El perseguidor imponente</td>
+    <td id="id23">King y Ban se enfrentan por última vez;
+    Guila,componente de los caballeros sagrados, pelea contra Meliodas,Diane y Elizabeth; a Ban le asaltan recuerdos del pasado.</td>
+    <td><a href="capitulo.html#8"><img src="img/cap8.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id24">9.Latido oscuro</td>
+    <td id="id25">Elaine consigue persuadir a King para que rescate a Meliodas y los demás.Mientras,en la capital,algunos caballeros sagrados empiezan a mostrar su descontento.</td>
+    <td><a href="capitulo.html#9"><img src="img/cap9.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id26">10.El festival de la lucha de vaizel</td>
+    <td id="id27">Cuando se enteran del premio del festibal de lucha,Gideon,Meliodas,Ban y King deciden participar...y también los caballeros sagrados Howzer y Griamore.</td>
+    <td><a href="capitulo.html#10"><img src="img/cap10.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id28">11.Sentimientos reprimidos</td>
+    <td id="id29">Durante la final de la primera ronda del festival, Ban rememora el día que conoció a Meliodas.Mientras,Veronica y Griamore buscan a Elizabeth.</td>
+    <td><a href="capitulo.html#11"><img src="img/cap1.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id30">12.El cañon aterrador</td>
+    <td id="id31">El ataque de un grupo de Caballeros Sagrados desata el caos durante el combate final del torneo. ¿A que habran venido?</td>
+    <td><a href="capitulo.html#12"><img src="img/cap12.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id32">13.El Ángel de la destrucción</td>
+    <td id="id33">Meliodas consigue liberarse de la prisión de la diosa Ambar,pero emerge totalmente cambiado y empieza a atacar a aliados y enemigos por igual.</td>
+    <td><a href="capitulo.html#13"><img src="img/cap13.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id34">14.El lector de libros</td>
+    <td id="id35">Meliodas y sus amigos inician la b´´úsqueda de los Siete Pecados Capitales que faltan,y Helbram envia asesinos a la caza del monstruo con armadura.</td>
+    <td><a href="capitulo.html#14"><img src="img/cap14.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id36">15.El caballero profano</td>
+    <td id="id37">Tras derrotar al monstruo con armadura, Gowther aparece comportándose de forma inesperada. Elizabeth descubre cosas sobre el pasado de Meliodas y sobre Liz.</td>
+    <td><a href="capitulo.html#15"><img src="img/cap15.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+    <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+   <tr>
+    <td class="cambio" id="id38">16.Héroes provocados</td>
+    <td id="id39">Elizabeth convence a Meliodas para que luche,y se descubre quién le robó la consciencia. Hendrickson inicia la resurreción del Clan de los Demonios.</td>
+    <td><a href="capitulo.html#16"><img src="img/cap16.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+ <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id40">17.El primer sacrificio</td>
+    <td id="id41">Tras el secuestro de Elizabeth, Meliodas, Ban y Gowther lanzan un ataque contra la capital. Entretanto,el rey Arturo de Camelot se enfrenta a Hendrickson.</td>
+    <td><a href="capitulo.html#17"><img src="img/cap17.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+ <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id42">18.Aunque me cueste la vida</td>
+    <td id="id43">Diane se enfrenta a la muerte tratando de proteger a Zeal, y Howzer y Guila tendrán que luchar contra formidables poderes mágicos.</td>
+    <td><a href="capitulo.html#18"><img src="img/cap18.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+ <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id44">19.El Rey Hada espera en vano</td>
+    <td id="id45">King recuerda cómo conoció a Diane hace 700 años y el triste incidente que se produjo entre Helbram y él.¿Qué promesa hicieron estos antaño buenos amigos?</td>
+    <td><a href="capitulo.html#19"><img src="img/cap19.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id46">20.El hechizo del coraje</td>
+    <td id="id47">Para rescatar a Elizabeth, Melliodas y Arturo libran una feroz batalla contra Hendrickson y Gilthunder.</td>
+    <td><a href="capitulo.html#20"><img src="img/cap20.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id48">21.La amenaza inminente</td>
+    <td id="id49">La aparición de Merlin acaba con los planes de Vivian; Meliodas se reencuentra con Elizabeth, y Ban
+    descubre que debe matar a alguien para resucitar a Elaine.</td>
+    <td><a href="capitulo.html#21"><img src="img/cap21.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id50">22.Lo que puedo hacer por ti</td>
+    <td id="id51">Meliodas vuelve a perder a Elizabeth. Ban se enfrenta a la persona que debe matar para salvar a Elaine. Diane y los demás luchan contra la Nueva Generación</td>
+    <td><a href="capitulo.html#22"><img src="img/cap22.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id52">23.Descenso a la desesperación</td>
+    <td id="id53">Con los Siete Pecados Capitales pisándole los talones, Hendrickson hace dos descubrimientos que le proporcionan el poder demoniaco definitivo.</td>
+    <td><a href="capitulo.html#23"><img src="img/cap23.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+ <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+  <tr>
+    <td class="cambio" id="id54">24.Los heroes</td>
+    <td id="id55">Justo cuando parece que los Siete Pecados Capitales van a ser derrotados por el inconmensurabe poder de Hendrickson, Elizabeth recupera su magia.</td>
+    <td><a href="capitulo.html#24"><img src="img/cap24.jpg" title="Has clik aqui para ver el capitulo"></a></td>
+  </tr>
+</table>
+</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+  <div class="titulo2">
+    <p id="id56">Mejores Momentos</p>
+  </div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+ <div class="cuadro">
+	<div class="titulo">
+		<p id="id57">Meliodas vs los 10 mandamientos</p>
+	</div>	
+
+<div class="video" title="Has click para reproducir el video">
+<video controls poster="img/pelea.jpg">
+	<source src="video/pelea.mp4" type="video/mp4">
+		<source src="video/pelea.ogv" type="video/ogv">
+			<source src="video/pelea.webm" type="video/webm">
+	
+</video>  
+</div>
+</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+<div class="cuadro">
+
+  <div class="titulo">
+    <p id="id58"> Muerte de Meliodas</p>
+  </div>  
+
+<div class="video" title="Has click para reproducir el video">
+<video  controls poster="img/muerte.jpg">
+  <source src="video/muerte.mp4" type="video/mp4">
+    <source src="video/muerte.ogv" type="video/ogv">
+      <source src="video/muerte.webm" type="video/webm">
+  
+</video>  
+</div>
+</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+<div class="cuadro">
+  <div class="titulo">
+    <p id="id59">Meliodas vs Hendrickson</p>
+  </div>  
+
+<div class="video" title="Has click para reproducir el video">
+<video controls poster="img/cap24.jpg">
+  <source src="video/pelea2.mp4" type="video/mp4">
+    <source src="video/pelea2.ogv" type="video/ogv">
+      <source src="video/pelea2.webm" type="video/webm">
+  
+</video>  
+</div>
+</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+
+<div class="cuadro">
+  <div class="titulo">
+    <p id="id60">Los 4 Arcangeles</p>
+  </div>  
+
+<div class="video" title="Has click para reproducir el video">
+<video controls poster="img/angeles.jpg">
+  <source src="video/angeles.mp4" type="video/mp4">
+    <source src="video/angeles.ogv" type="video/ogv">
+      <source src="video/angeles.webm" type="video/webm">
+  
+</video>  
+</div>
+</div>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<div class="titulo2" id="3">
+    <p id="id61">Lista de comentarios</p>
+  </div>
+<ol>
+  <li id="id62">Angelito Villca Davila Tu crees que va a tener buenas animaciones como el antiguo director que lanzo el anime 😼Es muy mala la animación hasta me dio pena casi mirar mi anime todo los miércoles😢.</li>
+  <li id="id63">Franco Paolo Adrian Diaz No lo Mires y ya , Nadie te Obliga ver algo gratis.</li>
+  <li id="id64">Diego Gari Per El anime es para disfrutar no para criticar eso dejaselo a los pendejos.</li>
+  <li id="id65">Jezer RS Holaaa, donde puedo ver los caps sin censura? No he visto ni uno solo por esta razón y siempre me estoy llenando de spoiler.Afortunadamente en mis redes sociales casi nadie ve este anime, entonces aun tengo esperanza para ver todo.</li>
+  <li id="id66">Kevin Cruz bro te recomiendo a esperar a netflix xD quiza lo arreglen para julio o agosto.</li>
+  <li id="id67">Daniel Sánchez Pasaran Jezer RS Una página los estaba subiendo sin censura, pero lo dejaron en el 4😢.</li>
+</ol>
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+<footer class="muevete">
+		<h1 id="id68">Página 3</h1>
+</footer>
+<script src="js1/idiomavideos.js"></script>
+</body>
+</html>

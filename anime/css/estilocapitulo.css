@@ -1,0 +1,67 @@
+.verticalcap{
+ width: 9%;
+ font-size: 35px;   /*cambio el tamaño de mi texto*/
+ position: fixed; /*permite que mi menu vertical */
+ z-index: 1;
+ margin-left:-10%;
+ transition: all 0.5s;
+ /*para hacer un retardo de aparicion*/
+ overflow: scroll;
+ height: 420px;
+}
+.vertical2cap{       /*estilo de menu vertical*/
+ list-style-type: none; /*me elimina los puntos de mi lista en el menu*/ 
+ overflow: hidden;
+ /*margin-left:-70%;*/
+}
+.vertical3cap{       /*estilo del contenido que hay dentro de cada cuadro*/
+ float:left;
+ clear: both;
+ width: 100%;
+ background-color: black;
+ border:solid;
+ color: white;
+ text-align: center;
+ padding: 10px;     /*añado espacio entre mi texto y el cuadro de mi menu para hacerlo mas grande*/
+ border-radius: 12px; /*me permite tener un borde circular*/
+}
+/*estilo de mi menu vertical que permite 
+pulsar un boton para que se esconda mi menu*/
+#btn_menu:checked ~ .verticalcap{
+  margin-left: 0;
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+.titulo p{
+  font-size: 70px;
+  color:rgb(55, 88, 205);
+  text-align: center;
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+.video{ 
+  margin-left: auto; /* con estos margin consigo centrar mi contenedor al centro*/
+  margin-right: auto;
+  width: 700px;
+  height:400px;
+}
+video{
+  width: 100%;
+  height:100%;
+}
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+@media(max-width: 600px){
+ .video  {
+    width: 100%;
+    height: auto;
+  }
+@media (max-width: 600px) {/*me permite dar un ancho del 100% a todo contenido que hay aqui es bueno para moviles*/         
+  .verticalcap {
+    width: 15%;
+    opacity: 0.7;
+  }
+}

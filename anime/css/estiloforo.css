@@ -1,0 +1,128 @@
+
+.formulario{
+  width: 500px;
+  margin: auto;
+  max-width: 100%;
+  padding:20px;
+  margin-top: 30px;
+  /*para hacer sombrado uso box-shadow*/
+  box-shadow: 0 0 20px 1px rgba(0,0,0,1);
+  position:relative;
+  background:rgba(0, 214, 186, 0.3);
+}
+.form_titulo{
+   color:red;
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 40px;
+   font-size: 40px;
+   opacity: 0.8;
+}
+.form_input, .form_label, .form_submit{
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+}
+/*estilo de el cuadro donde voy a escribir texto en mi pagina wed*/
+.form_input{
+  padding: 20px;
+  background:rgba(0, 54, 255, 0.2);
+  border:1px solid rgba(0,0,0,1);
+  margin-bottom: 40px;
+  
+}
+/*cuando estoy posicionado en mi elemento cuando hago click el elemento
+donde hice el click tiene el foco*/
+.form_input:focus{
+  outline: 1px solid rgba(0,0,0,0.7);
+  border:3px solid rgba(128, 128, 128, 0.5);
+}
+/*le digo que le selecione la clase form_label cuando el focus este
+activo*/
+.form_input:focus + .form_label{
+  margin-top: -130px;
+
+}
+/*estilo de mi cuadro de letras puestas*/
+.form_label{
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  /*con z-index hago que mi texto se vaya para atras para
+  verlo tendria que ir a mi otra caja y darle un fondo tranparente
+   si esta propiedad no podria ver el texto*/
+  z-index: -20;
+  /*realiza la animacion cuando hago click*/
+  transition: all 0.2s;
+  color: rgba(255, 255, 255, 1);
+}
+.mensaje{
+  padding: 20px;
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+  text-align: center;
+}
+.form_submit{
+  background:rgba(0,0,0,0.8);
+  color:white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border:none;
+}
+/*fijo mi texto animado arriba de mi contenedor*/
+.fijar{
+  margin-top: -135px;
+}
+textarea{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border:1px solid rgba(0,0,0,1);
+  background:rgba(0, 54, 255, 0.2);
+
+}
+ /*estilo de ancho y alto de mi caja de comentarios*/
+textarea{
+  min-height: 150px;
+  max-height: 300px;
+  max-width: 100%;
+  min-width: 50%;
+}
+p{
+	overflow: scroll;
+	width: 100%;
+	height: 500px;
+}
+/*input[type=text], select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  color: black;
+  border:none;
+  border-radius: 12px;
+  box-sizing: border-box;
+}*/
+/*cambio el color de placeholder
+::placeholder {
+  color: white;
+}*/
+
+
+/*--------------------------------------------------
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+
+
+@media (max-width: 700px) {
+  li, .formulario{
+    width: 100%;
+
+  }
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
+/*--------------------------------------------------*/
